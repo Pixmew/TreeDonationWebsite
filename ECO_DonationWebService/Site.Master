@@ -4,7 +4,7 @@
 
 <html lang="en">
 <head runat="server">
-    <link href="Content/Home.css" rel="stylesheet" />
+    <link rel="Stylesheet" href="~/Content/Home.css" type="text/css" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %> - My ASP.NET Application</title>
@@ -14,7 +14,8 @@
     </asp:PlaceHolder>
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <link href="Content/Home.css" rel="stylesheet" />
+    <link rel="Stylesheet" href="~/Content/Home.css" type="text/css" />
+    <link rel="stylesheet" href="~/Content/Master.css" type="text/css" />
 </head>
 <body>
     <form runat="server">
@@ -37,8 +38,8 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">HOME</a></li>
-                        <li><a runat="server" href="~/Pages/About">DONATE</a></li>
-                        <li><a runat="server" href="~/Pages/About">PATNERS</a></li>
+                        <li><a runat="server" href="~/Pages/Donation">DONATE</a></li>
+                        <li><a runat="server" href="~/Pages/Patners">PATNERS</a></li>
                         <li><a runat="server" href="~/Pages/About">ABOUT</a></li>
                         <li><a runat="server" href="~/Pages/Contact">CONTACTS</a></li>
                     </ul>
@@ -65,6 +66,26 @@
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
         </div>
+
+        <div>  
+            <asp:ContentPlaceHolder id="FooterContent" runat="server">  
+            </asp:ContentPlaceHolder>  
+       <div id="footer_section_main">  
+           <div class="footer_section_left">
+               <asp:TextBox ID="client_email_textbox" runat="server"></asp:TextBox>
+               <asp:Button ID="email_submit_btn" runat="server" Text="Button" />
+           </div>
+           <div class="footer_section_middle">
+               <asp:HyperLink CssClass="btn_middle" runat="server" NavigateUrl="~/Pages/Donation.aspx">DONATE NOW</asp:HyperLink>
+               <asp:HyperLink CssClass="btn_middle" runat="server" NavigateUrl="~/Pages/About.aspx">About US</asp:HyperLink>
+           </div>
+           <div class="footer_section_right">
+               <asp:HyperLink ID="HyperLink2" runat="server">Donate</asp:HyperLink>
+               <asp:HyperLink ID="HyperLink3" runat="server">Donate</asp:HyperLink>
+               <asp:HyperLink ID="HyperLink4" runat="server">Donate</asp:HyperLink>
+           </div>
+       </div>  
+       </div>  
     </form>
 </body>
 </html>

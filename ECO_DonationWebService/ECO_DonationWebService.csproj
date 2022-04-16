@@ -151,6 +151,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Home.css" />
+    <Content Include="Content\Master.css" />
     <Content Include="Pages\About.aspx" />
     <Content Include="Account\AddPhoneNumber.aspx" />
     <Content Include="Account\Confirm.aspx" />
@@ -186,10 +187,12 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Account\Web.config" />
+    <Content Include="Pages\Donation.aspx" />
+    <Content Include="Pages\Patners.aspx" />
     <Content Include="Resource\Forest_bg.jpg" />
-    <Content Include="Resource\379567-forest-green-nature-summer.jpg" />
-    <Content Include="Resource\gr.jpg" />
     <Content Include="Resource\sebastiao-salgado-reforestation.jpg" />
+    <Content Include="Resource\together planting.jpg" />
+    <Content Include="Resource\working with local.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Site.Master" />
@@ -333,6 +336,20 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Pages\Donation.aspx.cs">
+      <DependentUpon>Donation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Donation.aspx.designer.cs">
+      <DependentUpon>Donation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Patners.aspx.cs">
+      <DependentUpon>Patners.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Patners.aspx.designer.cs">
+      <DependentUpon>Patners.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>

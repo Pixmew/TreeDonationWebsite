@@ -1,38 +1,72 @@
-﻿body {
+﻿/***********************************
+    Default page stying
+************************************/
+body {
     margin: 0;
     padding: 0;
 }
-
 #BodyContent{
     margin:0;
     padding:0;
 }
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-/*
+/***********************************
     Main Presentation Section for the first thing user sees
-*/
+************************************/
 .home_background_main {
-    background-image: url('../Resource/Forest_bg.jpg');
-    background-size:cover;
-    padding:50vh 20vw;
+    background-image: url('../Resource/together planting.jpg');
+    background-size: cover;
+    padding: 40vh 10vw;
     left: 0px;
     top: 0px;
+    justify-content: center;
+}
+.home_background_main spam{
+    display:flex;
+    flex-direction:column;
+    align-content:center;
+}
+#quote, #quote_author {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+}
+#quote_author {
+    font-size: 20px;
 }
 
-#quote {
-    text-align:center;
-    text-decoration:none;
-    margin-left:10vw;
-    color:white;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size:20px;
+/***********************************
+    Button Section for donation etc
+************************************/
+.navigation_button {
+    display:flex;
+    flex-direction:row;
+    margin-top:5vh;
+    justify-content:center;
+}
+#donation_button {
+    margin: 0 10px;
+    color: forestgreen;
+    padding: 1vw 2vw;
+    font-size: 1.2vw;
+    border-radius: 10px;
+    background-color: white;
+}
+#donation_button:hover {
+    transition:ease-in;
+    transition-duration:0.2s;
+    background-color:orange;
+    color :white;
 }
 
 
-/*
+/***********************************
     Counter Section on home page showing the progress being made
-*/
-
+************************************/
 .planted_trees_counter {
     background-color: #1b536e;
     padding: 5vh 20vw;
@@ -44,7 +78,6 @@
     text-align: center;
     text-decoration: none;
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.2vw;
 }
 
@@ -52,6 +85,51 @@
     text-align: center;
     text-decoration: none;
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 3vw;
+}
+
+
+/***********************************
+    Information Section for providing information about the project/charity
+************************************/
+.info_section_inner {
+    display: flex;
+    flex-direction: row;
+}
+.info_section_inner div {
+    align-content: space-between;
+    padding: 10vh 10vw;
+    font-size: 1vw;
+}
+.info_section_inner div spam {
+    text-transform: capitalize;
+    font-size: 1.6vw;
+}
+#infotext {
+    text-align: center;
+}
+
+
+/***********************************
+    Final Message and Donation Buttion Section
+************************************/
+.final_message{
+    padding:5vw 25vw 0vw 25vw;
+    text-align:center;
+    font-size:1vw;
+}
+#donation_button_bottom {
+    text-align:center;
+    background-color: orange; 
+    color: white;
+    padding: 1vw 2vw;
+    font-size: 1vw;
+    border-radius: 25px;
+}
+#donation_button_bottom:hover {
+    background-color: darkorange;
+}
+.donation_btn_final_section {
+    padding: 3vh 38vw;
+    margin:5vw;
 }
