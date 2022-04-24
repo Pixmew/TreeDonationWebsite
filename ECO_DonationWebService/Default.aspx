@@ -6,8 +6,8 @@
         <spam id="quote_author">Dalai Lama-</spam>
         </div>
         <div class="navigation_button">
-        <asp:HyperLink ID="donation_button" NavigateUrl="~/Pages/Donation.aspx">Donation</asp:HyperLink>
-        <asp:HyperLink ID="donation_button" NavigateUrl="~/Pages/Donation.aspx">About Us</asp:HyperLink>
+        <asp:HyperLink CssClass="donation_button" runat="server" NavigateUrl="~/Pages/Donation.aspx">Donation</asp:HyperLink>
+        <asp:HyperLink CssClass="donation_button" runat="server" NavigateUrl="~/Pages/Donation.aspx">About Us</asp:HyperLink>
         </div>
     </div>
     <div class="planted_trees_counter">
@@ -111,6 +111,6 @@
           </p>
     </div>
     <div class="donation_btn_final_section">
-        <asp:HyperLink ID="donation_button_bottom" NavigateUrl="~/Pages/Donation.aspx">DONATE NOW</asp:HyperLink>
+        <asp:HyperLink CssClass="donation_button_bottom" runat="server" NavigateUrl="~/Pages/Donation.aspx">DONATE NOW</asp:HyperLink>
     </div>
 </asp:Content>

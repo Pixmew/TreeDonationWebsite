@@ -48,19 +48,21 @@ body {
     margin-top:5vh;
     justify-content:center;
 }
-#donation_button {
+.donation_button {
     margin: 0 10px;
     color: forestgreen;
     padding: 1vw 2vw;
     font-size: 1.2vw;
+    text-decoration: none;
     border-radius: 10px;
     background-color: white;
 }
-#donation_button:hover {
-    transition:ease-in;
-    transition-duration:0.2s;
-    background-color:orange;
-    color :white;
+.donation_button:hover {
+    transition: ease-in;
+    transition-duration: 0.2s;
+    background-color: orange;
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -83,7 +85,6 @@ body {
 
 .planted_trees_counter div progress_text {
     text-align: center;
-    text-decoration: none;
     color: white;
     font-size: 3vw;
 }
@@ -118,7 +119,7 @@ body {
     text-align:center;
     font-size:1vw;
 }
-#donation_button_bottom {
+.donation_button_bottom {
     text-align:center;
     background-color: orange; 
     color: white;
@@ -126,8 +127,9 @@ body {
     font-size: 1vw;
     border-radius: 25px;
 }
-#donation_button_bottom:hover {
+.donation_button_bottom:hover {
     background-color: darkorange;
+    text-decoration: none;
 }
 .donation_btn_final_section {
     padding: 3vh 38vw;

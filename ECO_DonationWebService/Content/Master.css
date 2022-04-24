@@ -30,6 +30,10 @@
     text-align: center;
     background-color: darkorange;
     color: white;
+    
     padding: 1vw 2vw;
     font-size: 1vw;
+}
+.btn_middle:hover {
+    text-decoration: none;
 }
