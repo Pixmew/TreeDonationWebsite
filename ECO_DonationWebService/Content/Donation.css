@@ -29,14 +29,35 @@ body {
 ************************************/
 .donation_form_inner {
     margin-top:15vh;
-    height: 75vh;
-    width: 25vw;
+    height: 69vh;
+    width: 45vw;
     background-color:aqua;
     border-radius:10px;
 }
 
-.donation_form_inner ul {
-    list-style: none;
-    position: center;
+.donation_form_inner_upper{
+    padding:30px;
+}
+
+.donation_form_inner_lower {
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+}
+.form_title {
+    text-align:center;
+    font-size:20px;
+}
+.donation_form_inner_lower_left, 
+.donation_form_inner_lower_right {
+    width: 25vw;
+}
+
+.donation_form_inner_lower_left, 
+.donation_form_inner_lower_right, 
+.donation_form_inner_upper {
+    margin: 10px;
+    background-color: gainsboro;
+    border-radius: 10px;
 }
 
