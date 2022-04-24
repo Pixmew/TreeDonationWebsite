@@ -100,4 +100,3 @@ E:\projects\ASP.NetProjects\TreeDonationWebsite\ECO_DonationWebService\obj\Debug
 E:\projects\ASP.NetProjects\TreeDonationWebsite\ECO_DonationWebService\obj\Debug\ECO_DonationWebService.csproj.CopyComplete
 E:\projects\ASP.NetProjects\TreeDonationWebsite\ECO_DonationWebService\obj\Debug\ECO_DonationWebService.dll
 E:\projects\ASP.NetProjects\TreeDonationWebsite\ECO_DonationWebService\obj\Debug\ECO_DonationWebService.pdb
-E:\projects\ASP.NetProjects\TreeDonationWebsite\ECO_DonationWebService\obj\Debug\ECO_DonationWebService.csproj.AssemblyReference.cache

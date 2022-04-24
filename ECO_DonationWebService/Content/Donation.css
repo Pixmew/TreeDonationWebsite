@@ -1,0 +1,42 @@
+﻿/***********************************
+    Donation page stying
+************************************/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#Content1 {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/***********************************
+    Donation page Background stying
+************************************/
+.donation_form_outer {
+    height: 100vh;
+    width: auto;
+    display:flex;
+    justify-content:space-around;
+}
+/***********************************
+    Donation page Form stying
+************************************/
+.donation_form_inner {
+    margin-top:15vh;
+    height: 75vh;
+    width: 25vw;
+    background-color:aqua;
+    border-radius:10px;
+}
+
+.donation_form_inner ul {
+    list-style: none;
+    position: center;
+}
+
