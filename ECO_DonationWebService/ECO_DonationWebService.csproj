@@ -190,6 +190,7 @@
     <Content Include="Account\Web.config" />
     <Content Include="Pages\Donation.aspx" />
     <Content Include="Pages\Patners.aspx" />
+    <Content Include="Resource\donationpage.png" />
     <Content Include="Resource\Forest_bg.jpg" />
     <Content Include="Resource\sebastiao-salgado-reforestation.jpg" />
     <Content Include="Resource\together planting.jpg" />

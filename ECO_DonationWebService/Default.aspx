@@ -22,7 +22,7 @@
     </div>
     <div id="info_section_outer">
         <div class="info_section_inner">
-            <iframe width="240%" height="auto" src="https://www.youtube.com/embed/WJ7eD6A4LlE" title="YouTube video player"
+            <iframe width="50%" height="auto" src="https://www.youtube.com/embed/WJ7eD6A4LlE" title="YouTube video player"
                 allow= autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
             <div id="infotext">
                 <spam>HOW IT WORKS</spam>
@@ -83,11 +83,11 @@
                     partners clear all surrounding grasses and other competing vegetation to enhance tree survival rates.
                 </p>
             </div>
-            <iframe width="425%" height="auto" src="https://www.youtube.com/embed/h2px9vWwhuo" title="YouTube video player" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="50%" height="auto" src="https://www.youtube.com/embed/h2px9vWwhuo" title="YouTube video player" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
         </div>
 
         <div class="info_section_inner">
-            <iframe width="250%" height="auto" src="https://www.youtube.com/embed/C08FAa-Vlj0" title="YouTube video player" allow=" autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="50%" height="auto" src="https://www.youtube.com/embed/C08FAa-Vlj0" title="YouTube video player" allow=" autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
             <div id="infotext">
                 <spam>Connecting with Locals</spam>
                 <p> 

@@ -2,45 +2,55 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="donation_form_outer">
         <div class="donation_form_inner">
-        <div class="donation_form_inner_upper" > 
-            <asp:Button runat="server" Text="❤️ 5$"  Height="100px" Width="100px" OnClick="Dolar5_Click"  Font-Size="20px" />
-            <asp:Button runat="server" Text="❤️ 10$" Height="100px" Width="100px" OnClick="Dolar10_Click" Font-Size="20px" />
-            <asp:Button runat="server" Text="❤️ 15$" Height="100px" Width="100px" OnClick="Dolar15_Click" Font-Size="20px" />
-            <asp:Button runat="server" Text="❤️ 20$" Height="100px" Width="100px" OnClick="Dolar20_Click" Font-Size="20px" />
-        </div>
         <div class="donation_form_inner_lower" >
             <div class="donation_form_inner_lower_left" >
-                <span class="form_title">Personal Information</span>
+                
+                <img class="donation_form_img" src="../Resource/donationpage.png"  />
+            </div>
+            <div class="donation_form_inner_lower_right" >
+                <h2>Plant A Tree</h2>
+                <p>So far, support for Plant a Tree has planted over 2 million trees across 5,930 acres. 
+                    Because our partners are involved in every step of the reforestation process, 
+                    each £5 donation covers the seed collection, growing, planting and protection, 
+                    guaranteeing a new forest to help biodiversity and tackle climate change.
+                    Currently, native trees are being planted in Brazil, Borneo, Kenya and India.</p>
+
+                <div class="donation_form_inner_upper" > 
+                    <asp:Button CssClass="donation_preset_btn" runat="server" Text="5❤️"  OnClick="Dolar5_Click"  />
+                    <asp:Button CssClass="donation_preset_btn" runat="server" Text="10❤️" OnClick="Dolar10_Click" />
+                    <asp:Button CssClass="donation_preset_btn" runat="server" Text="15❤️" OnClick="Dolar15_Click" />
+                    <asp:Button CssClass="donation_preset_btn" runat="server" Text="20❤️" OnClick="Dolar20_Click" />
+                </div>
+                <span class="form_title">Payment Details</span>
+
+                <asp:HyperLink CssClass="donation_button" runat="server" NavigateUrl="~/Pages/Donation.aspx">Donation</asp:HyperLink>
                 <div>
                     <span>First Name</span><br>
-                    <asp:TextBox ID="fNametextbox" runat="server" ></asp:TextBox>
+                    <asp:TextBox CssClass="donation_info_textbox" ID="fNametextbox" runat="server" ></asp:TextBox>
                 </div>
                 <div>
                     <span>Last Name</span><br>
-                    <asp:TextBox ID="lNametextbox" runat="server"></asp:TextBox>
+                    <asp:TextBox CssClass="donation_info_textbox" ID="lNametextbox" runat="server"></asp:TextBox>
                 </div>
                 <div>
                     <span>Address</span><br>
-                    <asp:TextBox ID="addresstextbox" runat="server"></asp:TextBox>
+                    <asp:TextBox CssClass="donation_info_textbox" ID="addresstextbox" runat="server"></asp:TextBox>
                 </div>
                 <div>
                     <span>Email</span><br>
-                    <asp:TextBox ID="emailtextbox" runat="server"></asp:TextBox>
+                    <asp:TextBox CssClass="donation_info_textbox" ID="emailtextbox" runat="server"></asp:TextBox>
                 </div>
                 <div>
                     <span>Phone Number</span><br>
-                    <asp:TextBox ID="mobnumbertextbox" runat="server"></asp:TextBox>
+                    <asp:TextBox CssClass="donation_info_textbox" ID="mobnumbertextbox" runat="server"></asp:TextBox>
                 </div>
-            </div>
-            <div class="donation_form_inner_lower_right" >
-                <span class="form_title">Payment Details</span>
                 <div>
                     <span>How nuch you wish to donate?</span><br>
-                    <asp:TextBox ID="amounttextbox" runat="server"></asp:TextBox>
+                    <asp:TextBox CssClass="donation_info_textbox" ID="amounttextbox" runat="server"></asp:TextBox>
                 </div>
                 <div>
                     <span>Credit/Debit Card</span><br>
-                    <asp:TextBox ID="cardnumbertextbox" runat="server"></asp:TextBox>
+                    <asp:TextBox CssClass="donation_info_textbox" ID="cardnumbertextbox" runat="server"></asp:TextBox>
                 </div>
                 <div>
                     <asp:DropDownList ID="MonthDropDownList" runat="server" Height="30px" ItemType="Month" Width="70px">

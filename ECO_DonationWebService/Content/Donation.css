@@ -17,7 +17,7 @@ body {
 
 /***********************************
     Donation page Background stying
-************************************/
+***********************************/
 .donation_form_outer {
     height: 100vh;
     width: auto;
@@ -26,38 +26,61 @@ body {
 }
 /***********************************
     Donation page Form stying
-************************************/
+***********************************/
 .donation_form_inner {
     margin-top:15vh;
-    height: 69vh;
-    width: 45vw;
-    background-color:aqua;
+    height: 70vh;
+    width: 60vw;
+    background-color:cyan;
     border-radius:10px;
 }
 
 .donation_form_inner_upper{
     padding:30px;
 }
+.donation_form_inner_upper .donation_preset_btn {
+    margin-left: 1vw;
+    height:2vw;
+    width:3vw;
+    font-size:0.8vw;
+}
 
 .donation_form_inner_lower {
     display: flex;
     flex-direction: row;
-    height: 50vh;
+    height: 80vh;
 }
-.form_title {
-    text-align:center;
-    font-size:20px;
+.donation_form_img{
+    width:20vw;
+    height:auto;
+    position:relative;
+    left:70px;
+    top:50px;
 }
-.donation_form_inner_lower_left, 
+.donation_form_inner_lower_left .form_title,
+.donation_form_inner_lower_right .form_title {
+    font-size: 1vw;
+}
+.donation_form_inner_lower_left .donation_info_textbox {
+    width: 10vw;
+}
 .donation_form_inner_lower_right {
-    width: 25vw;
+    width: 30vw;
+    position:relative;
+    left:10vw;
 }
-
+.donation_form_inner_lower_right .donation_info_textbox {
+    width: 15vw;
+}
 .donation_form_inner_lower_left, 
 .donation_form_inner_lower_right, 
 .donation_form_inner_upper {
-    margin: 10px;
-    background-color: gainsboro;
+    margin: 12px;
+    background-color: #eeeeee;
     border-radius: 10px;
 }
 
+.donation_form_inner_lower_left {
+    width: 15vw;
+    background-color:orange;
+}

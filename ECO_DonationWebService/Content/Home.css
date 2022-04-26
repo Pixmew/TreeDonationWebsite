@@ -96,6 +96,7 @@ body {
 .info_section_inner {
     display: flex;
     flex-direction: row;
+    height:50vh;
 }
 .info_section_inner div {
     align-content: space-between;
@@ -108,7 +109,7 @@ body {
 }
 #infotext {
     text-align: center;
-    width:25vw;
+    width:50%;
 }
 
 
