@@ -15,84 +15,39 @@ namespace ECO_DonationWebService.Pages
     {
 
         /// <summary>
-        /// fNametextbox control.
+        /// dollar5_donation control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox fNametextbox;
+        protected global::System.Web.UI.WebControls.Button dollar5_donation;
 
         /// <summary>
-        /// lNametextbox control.
+        /// dollar10_donation control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox lNametextbox;
+        protected global::System.Web.UI.WebControls.Button dollar10_donation;
 
         /// <summary>
-        /// addresstextbox control.
+        /// dollar50_donation control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox addresstextbox;
+        protected global::System.Web.UI.WebControls.Button dollar50_donation;
 
         /// <summary>
-        /// emailtextbox control.
+        /// dollar100_donation control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox emailtextbox;
-
-        /// <summary>
-        /// mobnumbertextbox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox mobnumbertextbox;
-
-        /// <summary>
-        /// amounttextbox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox amounttextbox;
-
-        /// <summary>
-        /// cardnumbertextbox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox cardnumbertextbox;
-
-        /// <summary>
-        /// MonthDropDownList control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList MonthDropDownList;
-
-        /// <summary>
-        /// YearDropDownList control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList YearDropDownList;
+        protected global::System.Web.UI.WebControls.Button dollar100_donation;
     }
 }

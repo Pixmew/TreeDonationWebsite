@@ -1,4 +1,6 @@
-﻿/***********************************
+﻿@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+/***********************************
     Master page stying
 ************************************/
 body {
@@ -12,7 +14,7 @@ body {
 }
 
 * {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 /*******************************
