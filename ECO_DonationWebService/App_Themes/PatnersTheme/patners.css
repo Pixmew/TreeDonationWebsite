@@ -44,10 +44,22 @@ body {
     height: 300px;
     box-shadow: rgba(0,0,0,0.2) 0.1px 0.1px 5px;
 }
+.patners_icon:hover {
+    box-shadow: rgba(0,0,0,0.3) 5px 5px 5px;
+    transition:ease-in;
+    transition-duration:0.1s;
+}
 .patners_icon_img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 250px;
+}
+.patners_icon_img1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:500px;
 }

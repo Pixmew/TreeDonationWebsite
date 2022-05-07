@@ -14,18 +14,21 @@
 						<div class="donation-box">
 							<div class="fields">
 								<div class="fields_row">
-								<input type="text" id="firstName" placeholder="First Name"> </input>
-								<input type="text" id="lastName" placeholder="Last Name"> </input>
+								<asp:TextBox ID="firstName" class="firstName" placeholder="First Name" runat="server" Width="150px" ></asp:TextBox>
+								<asp:TextBox ID="lastName" class="lastName" placeholder="Last Name" runat="server" Width="150px" ></asp:TextBox>
 								</div>
-								<input type="email" id="email" placeholder="Email"> </input>
-								<input type="number" id="card_number" placeholder="Credit/Debit Card"> </input>
-								<input type="number" id="cvc" placeholder="CVC"> </input>
-								<input type="number" id="zipcode" placeholder="ZipCode"> </input>
-								<input type="number" id="month" placeholder="Month"> </input>
-								<input type="number" id="year" placeholder="Year"> </input>
+								<asp:TextBox ID="email" CssClass="email" placeholder="Email" runat="server" ></asp:TextBox>
+								<asp:RegularExpressionValidator ID="regEmail" ControlToValidate="email" Text="Invalid email" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" runat="server" />   
+								
+								<asp:TextBox ID="card_number" CssClass="card_number" placeholder="Credit/Debit Card" runat="server" ></asp:TextBox>
+
+								<asp:TextBox ID="cvc" CssClass="cvc" placeholder="CVC" runat="server" Width="90px" ></asp:TextBox>
+								<asp:TextBox ID="zipcode" CssClass="zipcode" placeholder="ZipCode" runat="server" Width="90px" ></asp:TextBox>
+								<asp:TextBox ID="month" CssClass="month" placeholder="Month" runat="server" Width="90px" ></asp:TextBox>	
+								<asp:TextBox ID="year" CssClass="year" placeholder="Year" runat="server" Width="90px" ></asp:TextBox>
 								<br>
 								<spam style="font-size:20px;">$</spam>
-								<input type="number" id="amount" placeholder="Donation Amount"> </input>
+								<asp:TextBox ID="donate_textbox" CssClass="donate_textbox" placeholder="Donation Amount" runat="server" ></asp:TextBox>
 							</div>
 							<div class="amount">
 								<asp:Button Text="$5" CssClass="button" ID="dollar5_donation" runat="server" BorderStyle="None" OnClick="dollar5_donation_Click" />
@@ -33,7 +36,7 @@
 								<asp:Button Text="$50" CssClass="button" ID="dollar50_donation" runat="server" BorderStyle="None" OnClick="dollar50_donation_Click" />
 								<asp:Button Text="$100" CssClass="button" ID="dollar100_donation" runat="server" BorderStyle="None" OnClick="dollar100_donation_Click" />
 							</div>
-							<div class="donate-button"><i class="fa fa-credit-card"></i> Donate Now</div>
+							<asp:Button Text="Donate" CssClass="donate-button" ID="Button1" runat="server" BorderStyle="None" OnClick="Donation_Submit_Click" />
 						</div>
 						<p class="donation_summary_text">So far, support for Plant a Tree has planted over 2 million trees across 5,930 acres. 
 						Because our partners are involved in every step of the reforestation process, 

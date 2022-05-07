@@ -18,7 +18,7 @@ namespace ECO_DonationWebService.Pages
             System.IO.DirectoryInfo dir = new System.IO.DirectoryInfo(Path.GetFullPath(sFile));
             for (int i = 0; i < dir.GetFiles().Length; i++) {
                 HtmlGenericControl hgc = new HtmlGenericControl();
-                hgc.InnerHtml += "<div class=\"patners_icon\">  <img runat=\"server\" id=\"patners_icon_img_id\" alt=\"icon\" class=\"patners_icon_img\" src=\"../Resource/PatnersBusinessIcons/p" + i +".png\" >  </div>";
+                hgc.InnerHtml += "<div class=\"patners_icon\">  <img runat=\"server\" id=\"patners_icon_img_id"+i+"\" alt=\"icon\" class=\"patners_icon_img\" src=\"../Resource/PatnersBusinessIcons/p" + i +".png\" >  </div>";
                 patners_list_id1.Controls.Add( hgc );
             }
 
@@ -28,7 +28,7 @@ namespace ECO_DonationWebService.Pages
             for (int i = 0; i < dir.GetFiles().Length; i++)
             {
                 HtmlGenericControl hgc = new HtmlGenericControl();
-                hgc.InnerHtml += "<div class=\"patners_icon\">  <img runat=\"server\" id=\"patners_icon_img_id\" alt=\"icon\" class=\"patners_icon_img\" src=\"../Resource/PatnersDonerIcons/p" + i + ".png\" >  </div>";
+                hgc.InnerHtml += "<div class=\"patners_icon\">  <img runat=\"server\" id=\"patners_icon_img_id"+i+"\" alt=\"icon\" class=\"patners_icon_img\" src=\"../Resource/PatnersDonerIcons/p" + i + ".png\" >  </div>";
                 patners_list_id2.Controls.Add(hgc);
             }
         }

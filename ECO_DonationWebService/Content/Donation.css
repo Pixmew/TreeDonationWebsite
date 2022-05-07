@@ -184,14 +184,14 @@ body {
 .set-amount {
     max-width: 96px;
 }
-#firstName,  #lastName{
+.firstName,  .lastName{
     width:8vw;
     margin-right:10px;
 }
-#card_number{
+.card_number{
     margin-right:30px;
 }
-#cvc, #zipcode, #month, #year {
+.cvc, .zipcode, .month, .year {
     width: 4.5vw;
     margin-right: 5px;
 }
@@ -199,6 +199,9 @@ body {
     display:flex;
     flex-direction:row;
 }
-.donation_summary_text{
-    font-size:15px;
+.amount{
+
+}
+.donation_summary_text {
+    font-size: 15px;
 }
