@@ -1,4 +1,5 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap");
 
 /***********************************
     Master page stying
@@ -25,16 +26,8 @@ body {
     flex-direction:row;
     color:white;
     background-color:orange;
-    padding:5vw;
+    padding:0vw;
     width:auto;
-}
-
-#footer_section_main div {
-    text-align: center;
-    height:auto;
-    width:33vw;
-    justify-content: space-between;
-    font-size: 01vw;
 }
 
 .btn_middle {
@@ -48,3 +41,168 @@ body {
 .btn_middle:hover {
     text-decoration: none;
 }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-clr: #ec9508;
+    --hover-clr: #f8b449;
+    --white-clr: #fff;
+    --form-bg: #d38508;
+    --btn-bg: #a26606;
+}
+
+footer {
+    width: 100%;
+    margin-left:100px;
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+}
+
+.row-title {
+    font-size: 1.375em;
+    font-weight: 700;
+    font-family: "Quattrocento Sans", sans-serif;
+    color: var(--white-clr);
+    letter-spacing: 2px;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+/* mail list column */
+.col:first-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+form {
+    align-items: center;
+    justify-content: space-between;
+}
+
+input {
+    background: transparent;
+    padding: 0.1rem 0.5rem;
+    border: none;
+    outline: none;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 1rem;
+    color: var(--white-clr);
+}
+
+    input::placeholder {
+        font-family: "Quattrocento Sans", sans-serif;
+        color: var(--white-clr);
+    }
+
+.submit-btn {
+    height: 50px;
+    padding: 1rem;
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white-clr);
+    letter-spacing: 1px;
+    background: var(--btn-bg);
+    border: none;
+    outline: none;
+    transition: background 250ms ease-in;
+}
+
+    .submit-btn:hover {
+        background: var(--hover-clr);
+    }
+
+.row:nth-of-type(2) {
+    margin-top: 3rem;
+}
+/* quick links */
+.quick-links {
+    list-style-type: none;
+    display: flex;
+}
+
+    .quick-links li {
+        margin-left: 0.7rem;
+        padding: 0.2rem 0.5rem 0.2rem 0;
+        border-right: 2px solid var(--white-clr);
+    }
+
+        .quick-links li:first-of-type {
+            margin-left: 0;
+        }
+
+        .quick-links li:last-of-type {
+            border-right: none;
+        }
+
+        .quick-links li a {
+            font-family: sans-serif;
+            font-size: 600;
+            color: var(--white-clr);
+            text-decoration: none;
+            transition: color 250ms ease-in;
+        }
+
+            .quick-links li a:hover {
+                color: var(--hover-clr);
+            }
+
+/* support us */
+.col:nth-of-type(2) .btns {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+    .col:nth-of-type(2) .btns .btn {
+        height: 100%;
+        padding: 1rem;
+        font-family: sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--white-clr);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        background: var(--btn-bg);
+        border: none;
+        outline: none;
+        transition: background 250ms ease-in;
+    }
+
+        .col:nth-of-type(2) .btns .btn:last-of-type {
+            margin-top: 1rem;
+        }
+
+        .col:nth-of-type(2) .btns .btn:hover {
+            background: var(--hover-clr);
+        }
+
+/* social media */
+.col:last-of-type .social-links {
+    width: 35%;
+    margin-left:-20px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    list-style-type: none;
+}
+
+    .col:last-of-type .social-links li a {
+        color: var(--white-clr);
+        font-size: 2rem;
+        transition: color 250ms ease-in;
+    }
+
+        .col:last-of-type .social-links li a:hover {
+            color: var(--hover-clr);
+        }
+

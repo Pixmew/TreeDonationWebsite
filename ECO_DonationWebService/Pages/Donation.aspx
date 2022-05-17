@@ -14,21 +14,21 @@
 						<div class="donation-box">
 							<div class="fields">
 								<div class="fields_row">
-								<asp:TextBox ID="firstName" class="firstName" placeholder="First Name" runat="server" Width="150px" ></asp:TextBox>
-								<asp:TextBox ID="lastName" class="lastName" placeholder="Last Name" runat="server" Width="150px" ></asp:TextBox>
+								<asp:TextBox ID="firstName" class="firstName" placeholder="First Name" runat="server" Width="150px" BackColor="White" ForeColor="Gray" >First Name</asp:TextBox>
+								<asp:TextBox ID="lastName" class="lastName" placeholder="Last Name" runat="server" Width="150px" BackColor="White" ForeColor="Gray" >Last Name</asp:TextBox>
 								</div>
-								<asp:TextBox ID="email" CssClass="email" placeholder="Email" runat="server" ></asp:TextBox>
+								<asp:TextBox ID="email" CssClass="email" placeholder="Email" runat="server" BackColor="White" ForeColor="Gray" >Email</asp:TextBox>
 								<asp:RegularExpressionValidator ID="regEmail" ControlToValidate="email" Text="Invalid email" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" runat="server" />   
 								
-								<asp:TextBox ID="card_number" CssClass="card_number" placeholder="Credit/Debit Card" runat="server" ></asp:TextBox>
+								<asp:TextBox ID="card_number" CssClass="card_number" placeholder="Credit/Debit Card" runat="server" BackColor="White" ForeColor="Gray" >Card Number</asp:TextBox>
 
-								<asp:TextBox ID="cvc" CssClass="cvc" placeholder="CVC" runat="server" Width="90px" ></asp:TextBox>
-								<asp:TextBox ID="zipcode" CssClass="zipcode" placeholder="ZipCode" runat="server" Width="90px" ></asp:TextBox>
-								<asp:TextBox ID="month" CssClass="month" placeholder="Month" runat="server" Width="90px" ></asp:TextBox>	
-								<asp:TextBox ID="year" CssClass="year" placeholder="Year" runat="server" Width="90px" ></asp:TextBox>
+								<asp:TextBox ID="cvc" CssClass="cvc" placeholder="CVC" runat="server" Width="90px" BackColor="White" ForeColor="Gray" >CVC</asp:TextBox>
+								<asp:TextBox ID="zipcode" CssClass="zipcode" placeholder="ZipCode" runat="server" Width="90px" BackColor="White" ForeColor="Gray" >ZipCode</asp:TextBox>
+								<asp:TextBox ID="month" CssClass="month" placeholder="Month" runat="server" Width="90px" BackColor="White" ForeColor="Gray" >Month</asp:TextBox>	
+								<asp:TextBox ID="year" CssClass="year" placeholder="Year" runat="server" Width="90px" BackColor="White" ForeColor="Gray" >Year</asp:TextBox>
 								<br>
 								<spam style="font-size:20px;">$</spam>
-								<asp:TextBox ID="donate_textbox" CssClass="donate_textbox" placeholder="Donation Amount" runat="server" ></asp:TextBox>
+								<asp:TextBox ID="donate_textbox" CssClass="donate_textbox" placeholder="Donation Amount" runat="server" BackColor="White" ForeColor="Gray" >Amount</asp:TextBox>
 							</div>
 							<div class="amount">
 								<asp:Button Text="$5" CssClass="button" ID="dollar5_donation" runat="server" BorderStyle="None" OnClick="dollar5_donation_Click" />
