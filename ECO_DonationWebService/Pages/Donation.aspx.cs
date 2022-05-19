@@ -35,22 +35,22 @@ namespace ECO_DonationWebService.Pages
 
         protected void dollar5_donation_Click(object sender, EventArgs e)
         {
-            
+            donate_textbox.Text = "5";
         }
 
         protected void dollar10_donation_Click(object sender, EventArgs e)
         {
-
+            donate_textbox.Text = "10";
         }
 
         protected void dollar50_donation_Click(object sender, EventArgs e)
         {
-
+            donate_textbox.Text = "50";
         }
 
         protected void dollar100_donation_Click(object sender, EventArgs e)
         {
-
+            donate_textbox.Text = "100";
         }
 
         protected void Donation_Submit_Click(object sender, EventArgs e)
