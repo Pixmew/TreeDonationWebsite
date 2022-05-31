@@ -2,6 +2,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="donation_form_outer">
         <div class="donation_form_inner">
+			<div class="donation_form_inner_upper" >
+				<asp:Label Text="Error Window " BackColor="#FF3300" ForeColor="White" CssClass="ErrorWindow" ID="ErrorWindowText" runat="server" Height="40" Width="100%" Visible ="false"></asp:Label>
+			</div>
 			<div class="donation_form_inner_lower" >
 				<div class="donation_form_inner_lower_left" >
                 

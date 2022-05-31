@@ -19,7 +19,7 @@ body {
     Donation page Background stying
 ***********************************/
 .donation_form_outer {
-    height: 100vh;
+    height: 1000px;
     width: auto;
     display: flex;
     background-image: url('../Resource/Forest_bg.jpg');
@@ -29,8 +29,8 @@ body {
     Donation page Form stying
 ***********************************/
 .donation_form_inner {
-    margin-top:15vh;
-    height: 70vh;
+    margin-top:80px;
+    height: 800px;
     width: 60vw;
     border-radius:10px;
 }
@@ -48,7 +48,7 @@ body {
 .donation_form_inner_lower {
     display: flex;
     flex-direction: row;
-    height: 80vh;
+    height: 800px;
     background-color: #F5F5F5;
 }
 .donation_form_img{
@@ -209,4 +209,11 @@ input::placeholder {
 }
 .donation_summary_text {
     font-size: 15px;
+    margin-top:40px;
+    height:200px;
+}
+
+.ErrorWindow{
+    padding-top: 10px;
+    text-align:center;
 }

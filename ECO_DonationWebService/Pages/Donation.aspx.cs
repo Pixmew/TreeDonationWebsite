@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using FireSharp.Config;
 using FireSharp.Interfaces;
 using FireSharp.Response;
+using System.Text.RegularExpressions;
 
 
 namespace ECO_DonationWebService.Pages
@@ -55,9 +56,48 @@ namespace ECO_DonationWebService.Pages
 
         protected void Donation_Submit_Click(object sender, EventArgs e)
         {
-            DonationDataModel donationclient = new DonationDataModel( firstName.Text , lastName.Text , email.Text , Int64.Parse( card_number.Text ) , Int64.Parse( cvc.Text ) , Int64.Parse( donate_textbox.Text ) );
-            ; 
-            var setter = client.Push( "Doner/" + donationclient.email.Substring(0, donationclient.email.IndexOf('@')) , donationclient );
+            Regex regemail = new Regex(@"\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*");
+            Regex regname = new Regex(@"[a-zA-z]+");
+            Regex regaccno = new Regex(@"[0-9]{16}");
+            Regex regcvv = new Regex(@"[0-9]{3}");
+            Regex regammount = new Regex(@"[0-9]+");
+            ErrorWindowText.Visible = false;
+            if (!regemail.IsMatch(email.Text))
+            {
+                ErrorWindowText.Text = "Invalid email , Please enter valid email eg[myname12@gmail.com]";
+                ErrorWindowText.Visible = true;
+            }
+            else if (!regname.IsMatch(firstName.Text))
+            {
+                ErrorWindowText.Text = "Invalid First Name cannot be empty and cannot contain numbers";
+                ErrorWindowText.Visible = true;
+            }
+            else if (!regname.IsMatch(lastName.Text))
+            {
+                ErrorWindowText.Text = "Invalid Last Name cannot be empty and cannot contain numbers";
+                ErrorWindowText.Visible = true;
+            }
+            else if (!regaccno.IsMatch(card_number.Text))
+            {
+                ErrorWindowText.Text = "Invalid Card Number , Must be 16 digits Only";
+                ErrorWindowText.Visible = true;
+            }
+            else if (!regcvv.IsMatch(cvc.Text))
+            {
+                ErrorWindowText.Text = "Invalid cvv , Must be 3 digits Only";
+                ErrorWindowText.Visible = true;
+            }
+            else if (!regammount.IsMatch(donate_textbox.Text))
+            {
+                ErrorWindowText.Text = "Invalid Donation Amount , Must be in digits Only";
+                ErrorWindowText.Visible = true;
+            }
+            else
+            {
+                ErrorWindowText.Visible = false;
+                DonationDataModel donationclient = new DonationDataModel(firstName.Text, lastName.Text, email.Text, Int64.Parse(card_number.Text), Int64.Parse(cvc.Text), Int64.Parse(donate_textbox.Text));
+                var setter = client.Push("Doner/" + donationclient.email.Substring(0, donationclient.email.IndexOf('@')), donationclient);
+            }
         }
     }
 

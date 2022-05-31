@@ -222,9 +222,11 @@
     <Content Include="Account\Web.config" />
     <Content Include="Pages\Donation.aspx" />
     <Content Include="Pages\Patners.aspx" />
+    <Content Include="Resource\79679098.jpg" />
     <Content Include="Resource\aboutPageTitleImage.jpg" />
     <Content Include="Resource\donationpage.png" />
     <Content Include="Resource\Forest_bg.jpg" />
+    <Content Include="Resource\plantroots.jpg" />
     <Content Include="Resource\sebastiao-salgado-reforestation.jpg" />
     <Content Include="Resource\together planting.jpg" />
     <Content Include="Resource\working with local.jpg" />
